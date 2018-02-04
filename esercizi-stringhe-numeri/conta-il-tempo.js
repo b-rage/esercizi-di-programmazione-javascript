@@ -6,3 +6,14 @@
     Output: 3 ore, 29 minuti e 20 secondi.
   http://www.imparareaprogrammare.it
 */
+
+
+
+var input = prompt("Please enter a number", "12560");
+var h = Math.round(input/3600);
+var restHours = input%3600;
+var m = Math.round(restHours/60);
+var s = restHours%60;
+
+
+console.log("Output: " + h + " ore, " + m + " minuti, " + s + " secondi.");
