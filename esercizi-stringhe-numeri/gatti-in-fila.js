@@ -12,3 +12,13 @@
   Hint: Se vuoi usare l'arrotondamento ti consiglio di non usare Math.round (arrotonda all'intero superiore solo da .5 in su) ma utilizza Math.ceil (arrotonda sempre all'intero superiore).
   http://www.imparareaprogrammare.it
 */
+
+var totalCats = prompt('Inserisci il numero totale di gatti: ','15');
+var rowCats = prompt('Inserisci il numero di gatti presenti in ogni fila: ','8');
+
+var rowNumber = Math.ceil(totalCats/rowCats);
+var lostCats = (rowCats*rowNumber)-totalCats;
+console.log('numero di file: ' + rowNumber);
+console.log('gatti mancanti: ' + lostCats);
+
+

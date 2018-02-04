@@ -8,4 +8,4 @@ var birthYear = prompt("Please enter your birth year", "1972");
 var d = new Date();
 var n = d.getFullYear();
 var age = n-birthYear;
-console.log("Hai " + age +" anni");
+console.log("Hai " + age + " anni");
