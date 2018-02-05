@@ -22,8 +22,6 @@ if (num==num1n)
 else if (num==num2n)
   console.log('complimenti hai azzeccato');
 
-num1 = parseInt();
-num2 = parseInt();
 
 var dif1 = num-num1n;
 var dif2 = num-num2n;
