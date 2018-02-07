@@ -5,7 +5,7 @@
   http://www.imparareaprogrammare.it
 */
 
-shotN = prompt('inserisci il numero di tiri per ciascun giocatore', 5);
+var shotN = prompt('inserisci il numero di tiri per ciascun giocatore', 5);
 var i ;
 var shotNumber = Number(shotN);
 var sumP1 = 0;
