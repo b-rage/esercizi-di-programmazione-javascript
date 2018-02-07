@@ -26,7 +26,7 @@ console.log(sumP2);
 if (sumP1<sumP2) {
   console.log('vince il giocatore 2');
 } else if (sumP1==sumP2) {
-  console.log('i giocatori hanno pareggato');
+  console.log('i giocatori hanno pareggiato');
 }
 else { 
   console.log('vince il giocatore1');

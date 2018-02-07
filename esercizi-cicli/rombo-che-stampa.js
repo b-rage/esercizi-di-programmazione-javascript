@@ -18,12 +18,16 @@ var u = 1;
 var numN = Number(num);
 var numN2 = Number(num);
 
+
 for (i=1; i<=numN; i=i+2) {
 
   document.write('&nbsp;'.repeat(numN-i) + "X".repeat(i) + '<br>');
   
   
 }
+
+
+
 
 for (u=numN2; u>0; u=u-2) {
 
