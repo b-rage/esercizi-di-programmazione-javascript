@@ -31,8 +31,13 @@ for (i=1; i<=numN; i=i+2) {
 
 for (u=numN2; u>0; u=u-2) {
 
+  if(u===1) {
+    break;
+  }
+
   document.write('&nbsp;'.repeat((numN2-u)+2) + "X".repeat(u-2) + '<br>');
   
+ 
   
 }
 
