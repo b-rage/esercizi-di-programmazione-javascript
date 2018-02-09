@@ -11,27 +11,27 @@ var numbers = [];
 
 
   
-for (var i = 0; i<3; i++) {
+ for (var i = 0; i<3; i++) {
 
      numbers.push(Math.round( Math.random() * (50 - 1) + 1));
   }
  
   console.log(numbers);
 
-numbers.forEach(function(numberN){
+numbers.forEach(function(number){
 
   var numberUser = prompt('inserisci un numero', 12);
   var numberUserN = Number(numberUser);
-  var numberN = Number(numberN);
-  var indexN = numbers.indexOf(numberN);
+  var numberN = Number(number);
+  var indexN = numbers.indexOf(number);
   
   
-  for (i=0; i<numbers.length; i++){
+  numbers.forEach(function(number){
     if (numberN  % numberUserN === 0){
       var removed = numbers.splice(indexN, 1, 0);
     }
-  }
-console.log(numbers);
+  });
+ console.log(numbers);
 
 });
 
