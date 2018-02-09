@@ -6,3 +6,46 @@
   Hint: Per generare un numero casuale utlizza la funzione javascript random, che restituisce un intervallo compreso tra 0 e 1 che necessita di essere convertito per il tuo intervallo.
   http://www.imparareaprogrammare.it
 */
+
+var numbers = [];
+
+
+  
+for (var i = 0; i<3; i++) {
+
+     numbers.push(Math.round( Math.random() * (50 - 1) + 1));
+  }
+ 
+  console.log(numbers);
+
+numbers.forEach(function(numberN){
+
+  var numberUser = prompt('inserisci un numero', 12);
+  var numberUserN = Number(numberUser);
+  var numberN = Number(numberN);
+  var indexN = numbers.indexOf(numberN);
+  
+  
+  for (i=0; i<numbers.length; i++){
+    if (numberN  % numberUserN === 0){
+      var removed = numbers.splice(indexN, 1, 0);
+    }
+  }
+console.log(numbers);
+
+});
+
+  
+
+ 
+
+
+
+  
+
+   
+
+ 
+
+
+
