@@ -10,6 +10,7 @@
 var numbers = [];
 
 
+
   
  for (var i = 0; i<3; i++) {
 
@@ -18,24 +19,27 @@ var numbers = [];
  
   console.log(numbers);
 
-numbers.forEach(function(number){
 
-  var numberUser = prompt('inserisci un numero', 12);
-  var numberUserN = Number(numberUser);
-  var numberN = Number(number);
-  var indexN = numbers.indexOf(number);
-  
+
   
   numbers.forEach(function(number){
-    if (numberN  % numberUserN === 0){
-      var removed = numbers.splice(indexN, 1, 0);
-    }
+    var numberUser = prompt('inserisci un numero', 12);
+    var numberUserN = Number(numberUser);
+    var number = +number;
+    var indexN = numbers.indexOf(number);
+   
+    console.log(number);
+    
+      if (number  % numberUserN === 0){
+        numbers.splice(indexN, 1, 0);
+      }
+   
+      
+      console.log(numbers);
+
   });
- console.log(numbers);
 
-});
 
-  
 
  
 
