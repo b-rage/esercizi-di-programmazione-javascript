@@ -27,7 +27,7 @@ if(typeof Array.prototype.sum !== 'function') {
 }
 
 for (var i=0; i<100; i++) {
-  numbers.push(Math.round(Math.random() * (50-1) + 1) );
+  numbers.push(Math.round(Math.random() * (100-1) + 1) );
 }
 
 console.log(numbers);

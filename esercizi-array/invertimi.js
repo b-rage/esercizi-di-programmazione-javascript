@@ -6,3 +6,15 @@
   Non utilizzare array di appoggio per inversione.
   http://www.imparareaprogrammare.it
 */
+var numbers = [];
+var inputN = prompt('inserisci un numero');
+var inputNumber = Number(inputN);
+
+for (var i=0; i<inputNumber; i++) {
+  numbers.push(Math.round(Math.random() * (100-1) + 1) );
+  ;}
+console.log(numbers);
+
+var reverse = numbers.reverse();
+
+console.log(reverse);

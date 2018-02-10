@@ -10,37 +10,45 @@
 var numbers = [];
 
 
-
-  
- for (var i = 0; i<3; i++) {
+for (var i = 0; i<100; i++) {
 
      numbers.push(Math.round( Math.random() * (50 - 1) + 1));
   }
  
-  console.log(numbers);
-
-
-
+  console.log(numbers);  
   
-  numbers.forEach(function(number){
-    var numberUser = prompt('inserisci un numero', 12);
-    var numberUserN = Number(numberUser);
-    var number = +number;
-    var indexN = numbers.indexOf(number);
-   
-    console.log(number);
-    
-      if (number  % numberUserN === 0){
-        numbers.splice(indexN, 1, 0);
-      }
-   
+
+
+
+
+var length = numbers.length;
+
+
+for (var i=0; i<100; i++) {
+  var numero = numbers[i];
+  console.log(numero);
+  if (numero !==0) {
+      var numberUser = prompt('inserisci un numero', 12);
+
+      numbers.forEach(function(number){
       
-      console.log(numbers);
+        var numberUserN = Number(numberUser);
+        var indexN = numbers.indexOf(number);
+      
+        
+        for (i=0; i<numbers.length; i++) {
+          if (number  % numberUserN === 0){
+            numbers.splice(indexN, 1, 0);
+          }
+      
+        } 
+        
 
-  });
+      });} 
+}
 
 
-
+console.log(numbers); 
  
 
 
