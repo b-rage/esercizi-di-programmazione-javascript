@@ -13,100 +13,72 @@
 */
 var card = []; // cartella numeri tombola
 
-var cardN1 = card.push(Math.round(Math.random() * (90-1) + 1));
-var cardN3 = card.push(Math.round(Math.random() * (90-1) + 1));
-var cardN2 = card.push(Math.round(Math.random() * (90-1) + 1));
-var cardN4 = card.push(Math.round(Math.random() * (90-1) + 1));
-var cardN5 = card.push(Math.round(Math.random() * (90-1) + 1));
+card.push(Math.round(Math.random() * (90-1) + 1));
+var cardN1 = card[0];
 
-console.log(card);
+card.push(Math.round(Math.random() * (90-1) + 1));
+var cardN2 = card[1];
 
-if (cardN1 === cardN2  || cardN2 === cardN1 ) {
-   card.splice(1, 1);
-   cardN2 = card.push(Math.round(Math.random() * (90-1) + 1));
-   card.splice(1, 0, cardN2);
-   card.pop();
-} 
 
-console.log(card);
 
-if (cardN1 === cardN3 || cardN3 === cardN1) {
-  card.splice(2, 1);
-  cardN3 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(2, 0, cardN3);
-  card.pop();
+for (var i=0; i<5; i++) {
+    if (cardN2 === cardN1) {
+      card.pop();
+      card[1] = card.push(Math.round(Math.random() * (90-1) + 1));
+    } 
 }
 
 
-console.log(card);
+card.push(Math.round(Math.random() * (90-1) + 1));
+var cardN3 = card[2];
 
-if (cardN1 === cardN4 || cardN4 === cardN1) {
-  card.splice(3, 1);
-  cardN4 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(3, 0, cardN4);
-  card.pop();
+for (var i=0; i<5; i++) {
+  if (cardN3 === cardN1 || cardN3 === cardN2 ) {
+    card.pop();
+    card[2] = card.push(Math.round(Math.random() * (90-1) + 1));
+  } 
 }
 
 
-console.log(card);
+card.push(Math.round(Math.random() * (90-1) + 1));
+var cardN4 = card[3];
 
-if (cardN1 === cardN5) {
-  card.splice(4, 1);
-  cardN5 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(4, 0, cardN5);
-  card.pop();
+
+
+for (var i=0; i<5; i++) {
+  if (cardN4 === cardN1 || cardN4 === cardN2 || cardN4 === cardN3) {
+    card.pop();
+    card[3] = card.push(Math.round(Math.random() * (90-1) + 1));
+  } 
 }
 
-console.log(card);
+
+card.push(Math.round(Math.random() * (90-1) + 1));
+var cardN5 = card[4];
 
 
-if (cardN2 === cardN3) {
-  card.splice(2, 1);
-  cardN3 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(2, 0, cardN3);
-  card.pop();
+
+for (var i=0; i<5; i++) {
+  if (cardN5 === cardN1 || cardN5 === cardN2 || cardN5 === cardN3 || cardN5 === cardN4) {
+    card.pop();
+    card[4] = card.push(Math.round(Math.random() * (90-1) + 1));
+  } 
 }
-
 console.log(card);
+console.log(cardN1, cardN2, cardN3, cardN4, cardN5);
 
-if (cardN2 === cardN4) {
-  card.splice(3, 1);
-  cardN4 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(3, 0, cardN4);
-  card.pop();
-}
 
-if (cardN2 === cardN5) {
-  card.splice(4, 1);
-  cardN5 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(4, 0, cardN5);
-  card.pop();
-}
 
-console.log(card);
-
-if (cardN3 === cardN4) {
-  card.splice(3, 1);
-  cardN4 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(3, 0, cardN4);
-  card.pop();
+var numberUser = [];
+var match = [];
+for (var i=0; i<2; i++) {
+  numberUser.push(prompt('inserisci un numero da 1 a 90') );
 }
 
 console.log(card);
-
-if (cardN3 === cardN5) {
-  card.splice(4, 1);
-  cardN5 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(4, 0, cardN5);
-  card.pop();
-}
+console.log(numberUser);
 
 
-console.log(card);
 
-if (cardN4 === cardN5) {
-  card.splice(4, 1);
-  cardN5 = card.push(Math.round(Math.random() * (90-1) + 1));
-  card.splice(4, 0, cardN5);
-  card.pop();
-}
+
+
