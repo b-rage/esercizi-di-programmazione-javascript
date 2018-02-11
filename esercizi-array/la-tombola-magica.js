@@ -71,12 +71,17 @@ console.log(cardN1, cardN2, cardN3, cardN4, cardN5);
 
 var numberUser = [];
 var match = [];
-for (var i=0; i<2; i++) {
+for (var i=0; i<5; i++) {
   numberUser.push(prompt('inserisci un numero da 1 a 90') );
+  if (numberUser[i] == cardN1 || numberUser[i] == cardN2 || numberUser[i] == cardN3 || numberUser[i] == cardN4 || numberUser[i] == cardN5) {
+    match.push(numberUser[i]);
+    
+  }
 }
 
 console.log(card);
 console.log(numberUser);
+console.log(match);
 
 
 
