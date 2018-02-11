@@ -85,7 +85,7 @@ console.log(match);
 
 var win = match.length;
 var numberUser2 = [];
-     var match2 = [];
+var match2 = [];
 
 
 switch (win) {
