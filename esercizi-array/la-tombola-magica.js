@@ -83,6 +83,81 @@ console.log(card);
 console.log(numberUser);
 console.log(match);
 
+var win = match.length;
+var numberUser2 = [];
+var match2 = [];
+
+
+switch (win) {
+  
+case 5:
+     console.log('Hai vinto! 1 cinquina');
+     break;
+case 4:
+     console.log('Hai vinto! 1 quaterna');
+     break;
+case 3:
+     console.log('Hai vinto! 1 terno');
+     break;
+case 2:
+     console.log('Hai vinto! 1 ambo');
+     break;
+case 1:
+     console.log('Hai vinto! 1 estratto');
+     break;
+case 0:
+     
+     
+     
+     for (var i=0; i<5; i++) {
+     numberUser2.push(prompt('inserisci un numero da 1 a 90') );
+     if (numberUser2[i] == cardN1 || numberUser2[i] == cardN2 || numberUser2[i] == cardN3 || numberUser2[i] == cardN4 || numberUser2[i] == cardN5) {
+     match2.push(numberUser2[i]);
+    
+        }
+      }
+
+   break;
+     
+    
+}
+
+
+var win2 = match2.length;
+
+switch (win2) {
+  
+case 5:
+     console.log('Hai vinto! 1 cinquina');
+     break;
+case 4:
+     console.log('Hai vinto! 1 quaterna');
+     break;
+case 3:
+     console.log('Hai vinto! 1 terno');
+     break;
+case 2:
+     console.log('Hai vinto! 1 ambo');
+     break;
+case 1:
+     console.log('Hai vinto! 1 estratto');
+     break;
+case 0:
+     break;
+}
+
+
+console.log(match2);
+
+
+
+
+
+
+
+
+
+
 
 
 
