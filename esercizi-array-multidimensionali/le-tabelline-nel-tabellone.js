@@ -75,6 +75,7 @@ for(var j=0; j<10; j++) {
   }
 
 
+<<<<<<< HEAD
   matrix.unshift(['x',0,1,2,3,4,5,6,7,8,9,10]);
   for (var t=1; t<12; t++) {
   matrix[t].unshift(t-1);
@@ -82,3 +83,12 @@ for(var j=0; j<10; j++) {
   }
   
    console.log(matrix);
+=======
+matrix.unshift(['x',0,1,2,3,4,5,6,7,8,9,10]);
+for (var t=1; t<12; t++) {
+matrix[t].unshift(t-1);
+
+}
+
+ console.log(matrix);
+>>>>>>> 3fa33ca689f850389fba732787ab935468bea804
