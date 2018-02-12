@@ -29,14 +29,14 @@ var nN = parseInt(n);
 var mM = parseInt(m);
 var matrix = [[]];
 for(var j=1; j<nN; j++) {
-  matrix.push([]);
+  matrix.push([]);                 //numero righe
 }
 
 
  matrix.forEach(function(element, index)  {
   for (var i=0; i<mM; i++) {
     
-    matrix[index].push(Math.round(Math.random() * (100-1) + 1));
+    matrix[index].push(Math.round(Math.random() * (100-1) + 1));        //numero colonne
   } 
  });
 
@@ -61,15 +61,20 @@ for(var j=1; j<nN; j++) {
  var c = [];
  var r = [];
 
-matrix.forEach(function(element, index) {
+matrix.forEach(function(element, index) {     //somma righe
      r.push(matrix[index].sum());
 });
 
-for (var t=0; t<mM; t++) {
-  
-     c.push(matrix[t] + matrix[(t+1)]);
-     
+
+
+
+for(var i=0;i<matrix.length;i++){       //somma colonne
+ for(var j=0;j<matrix[i].length;j++){
+  c[j] = (c[j] || 0) + matrix[i][j];
+ }
 }
+
+
 
 
 console.log(matrix);

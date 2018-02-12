@@ -16,3 +16,62 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n = prompt('inserisci un numero');
+var m = prompt('inserisci un numero');
+var nN = parseInt(n);
+var mM = parseInt(m);
+
+var matrix = [[]];
+for(var j=1; j<nN; j++) {
+  matrix.push([]);
+}
+
+
+ matrix.forEach(function(element, index)  {
+  for (var i=0; i<mM; i++) {
+    
+    matrix[index].push(Math.round(Math.random() * (100-1) + 1));
+  } 
+ });
+
+ console.log(matrix);
+
+ if(typeof Array.prototype.sum !== 'function') {
+
+	Array.prototype.sum = function() {
+
+		var total = 0;
+	
+		for(var i = 0; i < this.length; i += 1) {
+	
+			total += this[i];
+	
+		}
+	
+		return total;
+
+	};
+
+}
+
+ var c = [];
+ var r = [];
+
+matrix.forEach(function(element, index) {     //somma righe
+     r.push(matrix[index].sum());
+});
+
+
+
+
+for(var i=0;i<matrix.length;i++){       //somma colonne
+ for(var j=0;j<matrix[i].length;j++){
+  c[j] = (c[j] || 0) + matrix[i][j];
+ }
+}
+
+console.log(matrix);
+console.log(r.sum());
+console.log(c.sum());
+ 
