@@ -11,3 +11,31 @@
             11
   http://www.imparareaprogrammare.it
 */
+var n = prompt('inserisci un numero');
+nN = Number(n);
+
+function firstNumbers (nN) {
+    for (var i=2; i<nN; i++) {
+      if ( nN % i !=0) {
+        return true;
+      }else
+      { return false;}
+    }
+
+}
+
+console.log(firstNumbers(n));
+
+var n2 = prompt('inserisci un numero');
+nN2 = Number(n2);
+
+for (i=0; i<nN2; i++) {
+  if (firstNumbers(i) = true) {
+    console.log(i);
+    
+  }
+}
+
+
+
+console.log(firstNumbers(n));

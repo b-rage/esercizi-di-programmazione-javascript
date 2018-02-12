@@ -9,3 +9,18 @@
   Utilizza questa funzione per creare un programma che simuli un gioco tra due utenti: vince chi indovina per primo il numero N che verrà generato casualmente tra 1 e 100.
   http://www.imparareaprogrammare.it
 */
+function near (a, b, n){
+    var aI = Math.abs(n-a);
+    var bI = Math.abs(n-b);
+    if (aI === bI) {
+      return 0;
+    }else if (bI < aI) {
+      return 1;
+    }else{
+      return -1;
+    }
+
+}
+
+console.log(near(20, 100, 10));
+

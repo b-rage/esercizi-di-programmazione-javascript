@@ -7,3 +7,13 @@
   Hint: puoi convertire il tipo di dato
   http://www.imparareaprogrammare.it
 */
+
+
+function numberInput (input){
+    var convert = String(Math.round(input));
+    var numero = convert.length;
+    return numero;
+}
+
+console.log(numberInput(2688888854.45));
+
