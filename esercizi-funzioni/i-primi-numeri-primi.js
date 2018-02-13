@@ -10,7 +10,7 @@
             7
             11
   http://www.imparareaprogrammare.it
-*/
+
 var n = prompt('inserisci un numero');
 nN = Number(n);
 
@@ -30,7 +30,7 @@ var n2 = prompt('inserisci un numero');
 nN2 = Number(n2);
 
 for (i=0; i<nN2; i++) {
-  if (firstNumbers(i) = true) {
+  if (isfirstNumbers(i) = true) {
     console.log(i);
     
   }
@@ -38,4 +38,47 @@ for (i=0; i<nN2; i++) {
 
 
 
-console.log(firstNumbers(n));
+console.log(firstNumbers(n));*/
+
+
+
+// prime number is a number which can be devided by 1 and itself only
+// by definition 1 is not a prime number
+/*function isPrimeNumber(num) {
+    // 1 and 0 are not prime numbers
+    if(num < 2) { return false; }
+    for (var i = 2; i < num; i++) {
+        // check if dividiable by any other number, if yes it is not a prime number
+        if(num % i == 0){ return false; }
+    }
+    return true;
+}*/
+
+function isPrimeNumber(num) {
+  // 1 and 0 are not prime numbers
+  if(num < 2) { return false; }
+  for (var i = 2; i < num; i++) {
+      // check if dividiable by any other number, if yes it is not a prime number
+      if(num % i == 0){ return false; }
+  }
+  return true;
+}
+var arr = [];
+var x = 0;
+
+function second(numero) {
+while(arr.length < numero){
+  if(isPrimeNumber(x)) { arr.push(x); }
+  x++;
+}
+}
+
+second(13);
+console.log(arr);
+
+
+
+
+
+
+
