@@ -10,3 +10,14 @@
             0
   http://www.imparareaprogrammare.it
 */
+
+
+function f1 (num) {
+  for(var i=num; i<=num; i--) {
+    if(i<0) {break;}
+    console.log(i);
+  }
+  
+}
+
+f1(43);
