@@ -1,7 +1,6 @@
 /*
   Primo e ultimo
   Scrivi due funzioni, una che prenda in input tre numeri e restituisca il maggiore, l'altra che restituisca il minore.
-
   Variante
   Scrivi due funzioni che prendano in input un array di numeri, una funzione deve restituire il valore maggiore contenuto nell'array, l'altra il valore minore.
   http://www.imparareaprogrammare.it
@@ -32,13 +31,23 @@ console.log(f2(34,67,45));
 
 //Variante
 
-var arr = [0];
+var arr = [];
+var arrm = [];
 
 function fmax(arr) {
   
-    return Math.max(arr);
+   var maxN = Math.max.apply(null, arr);
+   return maxN;
 }
 
-console.log(fmax(23,45,67,34,12));
+function fmin(arrm) {
+  
+   var minN = Math.min.apply(null, arrm);
+   return minN;
+}
+
+console.log(fmax([23,45,67,34,112]));
+console.log(fmin([2,45,67,34,112]));
+
 
 
