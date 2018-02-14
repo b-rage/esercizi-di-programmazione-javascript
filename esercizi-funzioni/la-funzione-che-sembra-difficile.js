@@ -7,3 +7,17 @@
             4
   http://www.imparareaprogrammare.it
 */
+
+function f1(n,k) {
+  var N = n.toString();
+  var lN = N.length;
+  var kN = +k;
+  if(kN<=lN) {
+     return N.charAt(lN-kN);
+  }else{
+    return 0;
+  }
+}
+
+
+console.log(f1(123456,3));

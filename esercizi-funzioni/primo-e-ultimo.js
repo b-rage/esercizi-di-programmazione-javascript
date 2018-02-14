@@ -6,3 +6,38 @@
   Scrivi due funzioni che prendano in input un array di numeri, una funzione deve restituire il valore maggiore contenuto nell'array, l'altra il valore minore.
   http://www.imparareaprogrammare.it
 */
+
+function f1(n1,n2,n3) {
+  if(n1>n2 && n1>n3) {
+    return n1;
+  }else if(n2>n1 && n2>n3) {
+    return n2;
+  }else{
+    return n3;
+  }
+}
+
+function f2(n1,n2,n3) {
+  if(n1<n2 && n1<n3) {
+    return n1;
+  }else if(n2<n1 && n2<n3) {
+    return n2;
+  }else{
+    return n3;
+  }
+}
+
+console.log(f1(34,67,45));
+console.log(f2(34,67,45));
+
+//Variante
+
+var arr = [];
+
+function fmax(arr) {
+    return Math.max(arr);
+}
+
+console.log(fmax(23,45,67,34,12));
+
+
