@@ -33,6 +33,7 @@ console.log(f2(34,67,45));
 //Variante
 
 var arr = [];
+var arrm = [];
 
 function fmax(arr) {
   
@@ -40,6 +41,14 @@ function fmax(arr) {
    return maxN;
 }
 
-console.log(fmax([23,45,67,34,12]));
+function fmin(arrm) {
+  
+   var minN = Math.min.apply(null, arrm);
+   return minN;
+}
+
+console.log(fmax([23,45,67,34,112]));
+console.log(fmin([2,45,67,34,112]));
+
 
 
