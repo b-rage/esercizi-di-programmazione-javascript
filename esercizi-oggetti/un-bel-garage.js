@@ -14,16 +14,23 @@ var car3 = {marca: 'Opel', modello: 'Corsa'};
 var car4 = {marca: 'Opel', modello: 'Zafira'};
 var car5 = {marca: 'BMW', modello: 'X3'};
 var garage = [car1, car2, car3, car4, car5];
+var mod = [];
 
-console.log(garage);
 
-  //function qualeModello(marc) {
+
+function qualeModello(marc) {
+
+  
     for(var i=0; i<garage.length; i++) {
-    
-     console.log(garage[i].marca);
+      if(garage[i].marca === marc) {
+       mod.push(garage[i]);
      
+      }
     }
-  //}
+    for(var j=0; j<mod.length; j++) {
+      console.log(mod[j].modello);
+    }
+}
 
-  //console.log(qualeModello('BMW'));
+ qualeModello('Opel');
   
