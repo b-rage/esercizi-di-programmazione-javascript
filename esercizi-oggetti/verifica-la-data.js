@@ -11,3 +11,14 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function getDates(day, month, year) {
+  if((day<1 || day>31) || (month<1 || month>12) || (day>29 && month==2) || (day==31 && month==4) || (day==31 && month==6) || (day==31 && month==9) || (day==31 && month==11)) {
+    console.log("La data non è valida!");
+    
+  }else{
+    console.log("La data è valida!");
+  }
+}
+
+getDates(31, 41, 2000);
