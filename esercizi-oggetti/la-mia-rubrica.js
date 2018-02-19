@@ -17,12 +17,4 @@
   http://www.imparareaprogrammare.it
 */
 
-
-
-
-
-
-
-
-
-Gestore quindi un array di oggetti prevedendo la possibileà di: inserire, modificare, visualizzare, ricercare e cancellare contatti della rubrica.
+//Gestore quindi un array di oggetti prevedendo la possibileà di: inserire, modificare, visualizzare, ricercare e cancellare contatti della rubrica.
