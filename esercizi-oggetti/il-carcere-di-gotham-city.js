@@ -114,6 +114,17 @@ function findFascicolo(nomeFasc, cognomeFasc) {
   }
 }
 
+function total() {
+  var evasi = [];
+  for(var i=0; i<fascicoli.length; i++) {
+    if(fascicoli[i].evaso === true) {
+    evasi.push('1');
+    }
+  }
+  console.log(guardie.length + ' ' + detenuti.length + ' ' + evasi.length);
+  
+}
+
 addGuardia('Carmelo', 'Sbirro', '18-09-1988');
 addGuardia('Carmelo2', 'Sbirro2', '18-09-1978');
 addGuardia('Carmelo3', 'Sbirro3', '22-09-1989');
@@ -121,11 +132,12 @@ addDetenuto('Girgio', 'Pacciani', '13-02-1980');
 addDetenuto('Girgio2', 'Pacciani2', '13-02-1970');
 addDetenuto('Girgio3', 'Pacciani3', '13-02-1960');
 addFascicolo(234, 'Giorgio', 'Pacciani', '23-03-2008', '23-03-2028', 'omicidio', true, false);
-addFascicolo(234, 'Giorgio2', 'Pacciani2', '23-03-2000', '23-03-2025', 'omicidio', false, false);
-addFascicolo(234, 'Giorgio3', 'Pacciani3', '23-03-2010', '23-03-2020', 'rapina', false, false);
+addFascicolo(234, 'Giorgio2', 'Pacciani2', '23-03-2000', '23-03-2025', 'omicidio', false, true);
+addFascicolo(234, 'Giorgio3', 'Pacciani3', '23-03-2010', '23-03-2020', 'rapina', true, false);
 guardieList();
 detenutiList();
 fascicoliList();
 findFascicolo('Giorgio2', 'Pacciani2');
+total();
 
 
